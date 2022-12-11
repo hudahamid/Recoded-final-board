@@ -14,17 +14,19 @@ function App() {
        <Navbar />
         <div className="container">
           <Routes>
-            <Route path="/" element={<Home />}></Route>   
+            {/* <Route path="/" element={<ToDo />}></Route>    */}
+            <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route>   
+
             <Route path="/about" element={<About />}></Route>   
 
           </Routes>
 
         </div>
 
-      <header className="App-header">
+      {/* <header className="App-header">
        <ToDo/> 
     
-      </header>
+      </header> */}
     </div>
   );
 }
