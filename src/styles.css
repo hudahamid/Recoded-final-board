@@ -52,13 +52,22 @@
     align-items: center;
     gap: 1rem;
  }
+ 
+ .about-text p{
+   padding: 0 10rem;
+   line-height: 1.5rem;
+   text-align: justify;
+    
+ }
  .team-details{
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 1rem;
+    padding: 0 5rem;
  }
  .team-details img{
    height: 25rem;
    width: 20rem;
+   border-radius: 50%;
  }

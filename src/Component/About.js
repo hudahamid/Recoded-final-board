@@ -6,7 +6,7 @@ import shadImage from '../imgs/shad.jpg';
 
 export default function About(){
     return (
-        <div>
+        <div className="about-text">
             <h1> About Page</h1>
             <p>'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                 Aenean commodo ligula eget dolor. Aenean massa. 
