@@ -57,7 +57,7 @@ function ToDo(){
 
    
     return (
-    <form  style={{
+    <form className="form-todo" style={{
                     display: "flex",
                     flexDirection: "column",
                     marginTop: "20px",
@@ -74,6 +74,7 @@ function ToDo(){
           />
           <label>Describtion</label>
             <input
+            className="desc"
             type="text"
             placeholder="Describtion"
             name="description"
@@ -127,7 +128,7 @@ function ToDo(){
         </div> */}
         <div>
         {/* <Button type="submit" text={"Add new Movie"} /> */}
-            <button type="submit"   text={"Add new task"} >Add Task</button>
+            <button type="submit" className="submit-btn"  text={"Add new task"} >Add Task</button>
         </div>
     </form>);
 }
