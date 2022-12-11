@@ -46,3 +46,19 @@
  .nav li:hover {
  background-color: #777;
  }
+ .team-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+ }
+ .team-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+ }
+ .team-details img{
+   height: 25rem;
+   width: 20rem;
+ }
