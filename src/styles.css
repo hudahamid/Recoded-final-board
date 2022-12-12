@@ -131,6 +131,12 @@
     border: none;
     border-radius: 3px;
  }
+ .edit{
+    color:#ede3d7;
+    color: #334938;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+ }
 
 .card1{
     
@@ -139,6 +145,7 @@
 border-radius: 2px
    
 }
+
 
 .card-todoo{
     display: flex;
