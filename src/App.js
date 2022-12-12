@@ -16,10 +16,12 @@ function App() {
        <Navbar />
         <div className="container"  id='basic_view'>
           <Routes>
-            {/* <Route path="/" element={<ToDo />}></Route>    
+
+            <Route path="/Home" element={<Home />}></Route>  
+            <Route path="/" element={<ToDo />}></Route>    
             <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route> 
-            <Route path="/Component/tasks/Doing" element={<Doing />}></Route> 
-            <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route> 
+            {/* <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route>  */}
+
 
             <Route path="/about" element={<About />}></Route>    */}
 
