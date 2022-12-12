@@ -3,6 +3,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ToDo from './Component/tasks/ToDo';
+import Doing from './Component/tasks/Doing';
 import Navbar from "./Component/Navbar"
 import {Routes, Route} from "react-router-dom";
 import Home from "./Component/Home";

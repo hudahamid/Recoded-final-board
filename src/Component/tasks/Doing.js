@@ -9,7 +9,7 @@ import db from "../../firebase";
 import { collection, addDoc, onSnapshot } from "firebase/firestore"
 import TasksCard from "./TasksCard";
 
-function ToDo(){
+function Doing(){
     //const [Title, setTitle] = useState("")
      
     const [newTaskInput, setNewTaskInput] = useState({});
@@ -152,7 +152,4 @@ function ToDo(){
     );
 
 }
-
-
-
-export default ToDo;
+export default Doing;
