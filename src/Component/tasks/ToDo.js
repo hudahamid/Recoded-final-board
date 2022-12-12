@@ -1,8 +1,13 @@
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import React, { useEffect, useState } from "react";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import db from "../../firebase";
 import { collection, addDoc, onSnapshot } from "firebase/firestore"
+import TasksCard from "./TasksCard";
 
 function ToDo(){
     //const [Title, setTitle] = useState("")
@@ -49,18 +54,22 @@ function ToDo(){
     // Clear the form
     setNewTaskInput({
       title: "",
-      year: "",
-      director: "",
-      rating: "",
+      description: "",
+      assign: "",
+      start: "",
     });
   };
 
    
     return (
-    <form className="form-todo" style={{
+      <Container>
+        <Row>
+        <Col>
+        <form className="form-todo" style={{
                     display: "flex",
                     flexDirection: "column",
                     marginTop: "20px",
+                    marginLeft:"50px",
                     width: "500px", 
                 }}     onSubmit={handleSubmit}   
     >
@@ -130,7 +139,41 @@ function ToDo(){
         {/* <Button type="submit" text={"Add new Movie"} /> */}
             <button type="submit" className="submit-btn"  text={"Add new task"} >Add Task</button>
         </div>
-    </form>);
+    </form>
+        
+        </Col>
+      </Row>
+
+      <Row>
+      <Col>{taskList.map((task) => {
+          return (
+                   <div  className="todo-card"> 
+                     <Card  className="mb-2"     bg={"Secondary".toLowerCase()}  key={"Secondary"}   border="primary" style={{ width: '18rem' }}>
+                      <Card.Body>
+                        <Row>
+                          <column>
+                           <Card.Title>{task.title}</Card.Title>
+                                <Link to={`/task/${task.id}`} key={task.id}>
+                                      
+                                </Link>
+                             <TasksCard {...task} /> 
+                      </column>
+                      <column>  <Button variant="primary">Edit</Button> </column>
+                     </Row>
+                      
+                      </Card.Body>
+                      </Card>
+                     </div>
+                  );
+        })}</Col>
+    
+    
+        </Row>
+    </Container>
+    
+    
+    
+    );
 }
 
 export default ToDo;
