@@ -18,11 +18,13 @@ function App() {
           <Routes>
             {/* <Route path="/" element={<ToDo />}></Route>    */}
             <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route> 
+            <Route path="/Component/tasks/Doing" element={<Doing />}></Route> 
             <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route> 
 
             <Route path="/about" element={<About />}></Route>   
 
           </Routes>
+          <Doing />
 
         </div>
 

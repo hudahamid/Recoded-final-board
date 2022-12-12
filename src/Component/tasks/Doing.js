@@ -65,9 +65,9 @@ function Doing(){
       <Container>
         <Row className='card1'>
         <Col>
-        <h1>ToDo</h1>
+        <h1>Doing</h1>
 
-        <form className="form-todo" style={{
+        {/* <form className="form-todo" style={{
                     display: "flex",
                     flexDirection: "column",
                     marginTop: "20px",
@@ -117,7 +117,7 @@ function Doing(){
 
 
        
-    </form>
+    </form> */}
     {taskList.map((task) => {
           return (
                  
