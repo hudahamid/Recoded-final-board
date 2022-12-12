@@ -8,7 +8,7 @@ export default function Navbar(){
             <Link to="/" className="site-title">Empy Task</Link>
 
             <ul>
-                {/* <CustomLink to="/home">Home</CustomLink> */}
+                <CustomLink to="/home">Home</CustomLink> 
                 <CustomLink to="/Component/tasks/ToDo">ToDo</CustomLink>
 
                 <CustomLink to="/about">About</CustomLink>
