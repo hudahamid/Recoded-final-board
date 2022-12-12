@@ -156,7 +156,7 @@ function ToDo(){
                                 <Link to={`/task/${task.id}`} key={task.id}>
                                       
                                 </Link>
-                             <TasksCard {...task} /> 
+                             {/* <TasksCard {...task} />  */}
                       </column>
                       <column>  <Button variant="primary">Edit</Button> </column>
                      </Row>
