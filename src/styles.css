@@ -15,16 +15,16 @@
      
  }
 .container{
-    margin:5%;
-    display: flex;
-    justify-content: center;
+    margin:2%;
+    /* display: flex;
+    justify-content: center; */
   
 }
 
  .nav{
      background-color:#334938;
      display: flex;
-     color: #fff;
+     color:  white;
      justify-content:space-between;
      align-items: stretch;
      gap: 1rem;
@@ -88,15 +88,17 @@
    border-radius: 50%;
  }
  .form-todo{
-    padding: 1% 2%;
-    background: linear-gradient(to bottom right, #e1be25,#f7783d,#418b53 );
-   border-radius: 3%;
+  border: 2px solid  #ede3d7;
+  padding: 2%;
+  margin-bottom: 2%;
+  background-color: #ede3d7;
+  border-radius: 2px;
   
  }
 
  .form-todo label{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
+    color:black;
     text-align: start !important;
     font-size: 20px;
     margin-top: 4%;
@@ -105,7 +107,8 @@
     height: 4vh;
     border: none;
     border-radius: 3px;
-    
+  background-color: #334938;
+  color: white;
     margin-top: 1%
  }
 
@@ -120,16 +123,27 @@
     height: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-     color:#333;
+     color:#ede3d7;
+     background-color: #334938;
     font-size: 15px;
    
     border: none;
     border-radius: 3px;
  }
 
- /* .todo-card{
-    padding: 1% 2%;
-    background: linear-gradient(to bottom right, #e1be25,#f7783d,#418b53 ); 
-   border-radius: 3%;
-   display: table-column;
- } */
+.card1{
+    width: 25%;
+    padding: 0.3% 2%;
+    background: linear-gradient(to bottom right, #e1be25,#f7783d,#418b53 );
+border-radius: 2px
+   
+}
+
+.card-todoo{
+    display: flex;
+    justify-content: space-between;
+ 
+    padding: 1%;
+    margin: 3%;
+    background-color: #ede3d7;
+}
