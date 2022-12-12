@@ -65,6 +65,7 @@ function ToDo(){
       <Container>
         <Row className='card1'>
         <Col>
+        <h1>ToDo</h1>
 
         <form className="form-todo" style={{
                     display: "flex",
@@ -138,19 +139,16 @@ function ToDo(){
         </Col>
       </Row>
 
-      {/* <Row > */}
-      {/* <Col> */}
-      
-        {/* </Col> */}
-    
-    
-        {/* </Row> */}
+
+
+
 
     </Container>
     
     
     
     );
+    
 }
 
 export default ToDo;

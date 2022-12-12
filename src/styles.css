@@ -16,8 +16,8 @@
  }
 .container{
     margin:2%;
-    /* display: flex;
-    justify-content: center; */
+ 
+ 
   
 }
 
@@ -85,7 +85,7 @@
  .team-details img{
    height: 25rem;
    width: 20rem;
-   border-radius: 50%;
+   /* border-radius: 50%; */
  }
  .form-todo{
   border: 2px solid  #ede3d7;
