@@ -16,6 +16,7 @@
  }
 .container{
     margin:2%;
+    width: 25%;
  
  
   
@@ -132,8 +133,8 @@
  }
 
 .card1{
-    width: 25%;
-    padding: 0.3% 2%;
+    
+    padding: 0.3% 4%;
     background: linear-gradient(to bottom right, #e1be25,#f7783d,#418b53 );
 border-radius: 2px
    
@@ -148,3 +149,6 @@ border-radius: 2px
     background-color: #ede3d7;
 }
 
+.container1{
+    display: flex;
+}

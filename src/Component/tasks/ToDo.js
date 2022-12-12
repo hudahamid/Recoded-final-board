@@ -63,8 +63,8 @@ function ToDo(){
    
     return (
       <Container>
-        <Row className='card1'>
-        <Col>
+        <div className='card1'>
+       
         <h1>ToDo</h1>
 
         <form className="form-todo" style={{
@@ -136,8 +136,8 @@ function ToDo(){
                   
                   );
         })}
-        </Col>
-      </Row>
+    
+      </div>
 
 
 
