@@ -3,17 +3,14 @@ import Button from 'react-bootstrap/Button';
 
 export default function Home(){
     return (
-        <div>
-            <h1> YOUR WORKSPACES</h1>
+        <div className='homee'>
+           <h2 className='urwork' > YOUR WORKSPACES</h2>
             
-            <Card.Body className='card-todoo'>
-                      
-                      <span>New kanban board</span>
-                           {/* <Link to={`/task/${task.id}`} key={task.id}>
-                                 <Button >Edit</Button>  
-                           </Link>
-              */}
-                 </Card.Body>
+            <div className='card-home'>
+                       
+                      <h2>New kanban board</h2>
+               
+                 </div>
              
              
         </div>
