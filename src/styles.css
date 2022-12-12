@@ -62,7 +62,31 @@
  .nav li:hover {
  color: rgb(173, 173, 8);
  }
-
+ .team-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+ }
+ 
+ .about-text p{
+   padding: 0 10rem;
+   line-height: 1.5rem;
+   text-align: justify;
+    
+ }
+ .team-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 5rem;
+ }
+ .team-details img{
+   height: 25rem;
+   width: 20rem;
+   border-radius: 50%;
+ }
  .form-todo{
     padding: 1% 2%;
     background: linear-gradient(to bottom right, #e1be25,#f7783d,#418b53 );
