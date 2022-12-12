@@ -66,7 +66,7 @@ function ToDo(){
         <Row className='card1'>
         <Col>
         <h1>ToDo</h1>
-
+        <div className='CONTAINER'></div>
         <form className="form-todo" style={{
                     display: "flex",
                     flexDirection: "column",
@@ -113,6 +113,7 @@ function ToDo(){
      
             <button type="submit" className="submit-btn"  text={"Add new task"} >Add Task</button>
         </div>
+        {/* js action */}
 
 
 
@@ -128,8 +129,19 @@ function ToDo(){
                       
                            <span>{task.title}</span>
                                 <Link to={`/task/${task.id}`} key={task.id}>
+
                                       <Button className='edit' variant="primary">Edit</Button>
+
                                 </Link>
+                              
+                                {/* { document.querySelectorAll('.edit').addEventListener('click', event => {
+                              const CONTAINER = document.querySelector(".CONTAINER");
+                                CONTAINER.innerHTML = `
+                                <h1>hello</h1>
+                                `;
+                              })
+                                } */}
+
                   
                       </Card.Body>
                   
