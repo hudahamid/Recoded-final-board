@@ -14,9 +14,9 @@ function App() {
   return (
     <div className="App">
        <Navbar />
-        <div className="container">
+        <div className="container"  id='basic_view'>
           <Routes>
-            {/* <Route path="/" element={<ToDo />}></Route>    */}
+            <Route path="/" element={<ToDo />}></Route>    
             <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route> 
             <Route path="/Component/tasks/Doing" element={<Doing />}></Route> 
             <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route> 
