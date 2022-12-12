@@ -9,7 +9,7 @@ import db from "../../firebase";
 import { collection, addDoc, onSnapshot } from "firebase/firestore"
 import TasksCard from "./TasksCard";
 
-function ToDo(){
+function Doing(){
     //const [Title, setTitle] = useState("")
      
     const [newTaskInput, setNewTaskInput] = useState({});
@@ -65,9 +65,9 @@ function ToDo(){
       <Container>
         <Row className='card1'>
         <Col>
-        <h1>ToDo</h1>
+        <h1>Doing</h1>
 
-        <form className="form-todo" style={{
+        {/* <form className="form-todo" style={{
                     display: "flex",
                     flexDirection: "column",
                     marginTop: "20px",
@@ -117,7 +117,7 @@ function ToDo(){
 
 
        
-    </form>
+    </form> */}
     {taskList.map((task) => {
           return (
                  
@@ -128,7 +128,7 @@ function ToDo(){
                       
                            <span>{task.title}</span>
                                 <Link to={`/task/${task.id}`} key={task.id}>
-                                      <Button className='edit' variant="primary">Edit</Button>
+                                      <Button variant="primary">Edit</Button>  
                                 </Link>
                   
                       </Card.Body>
@@ -152,7 +152,4 @@ function ToDo(){
     );
 
 }
-
-
-
-export default ToDo;
+export default Doing;
