@@ -6,7 +6,7 @@ export default function Home(){
         <div>
             <h1> YOUR WORKSPACES</h1>
             
-            <Card.Body className='card-todoo'>
+            <Card.Body className='card-todoo' >
                       
                       <span>New kanban board</span>
                            {/* <Link to={`/task/${task.id}`} key={task.id}>
