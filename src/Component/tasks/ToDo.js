@@ -66,15 +66,17 @@ function ToDo(){
         <div className='card1'>
        
         <h1>ToDo</h1>
+
         <div className='CNTAINER'></div>
+
 
         <form className="form-todo" style={{
                     display: "flex",
                     flexDirection: "column",
-                    marginTop: "20px",
-                   
-                }}     onSubmit={handleSubmit}   
-    >
+                    marginTop: "20px",   
+                }}   
+                  onSubmit={handleSubmit}   
+                    >
          <label>Title</label>
          <input
             type="text"
@@ -114,8 +116,10 @@ function ToDo(){
      
             <button type="submit" className="submit-btn"  text={"Add new task"} >Add Task</button>
         </div>
+
    
     </form>
+
 
 
 
@@ -133,8 +137,19 @@ function ToDo(){
                       
                            <span>{task.title}</span>
                                 <Link to={`/task/${task.id}`} key={task.id}>
+
                                       <Button className='edit' variant="primary">Edit</Button>
+
                                 </Link>
+                              
+                                {/* { document.querySelectorAll('.edit').addEventListener('click', event => {
+                              const CONTAINER = document.querySelector(".CONTAINER");
+                                CONTAINER.innerHTML = `
+                                <h1>hello</h1>
+                                `;
+                              })
+                                } */}
+
                   
                       </Card.Body>
                   
