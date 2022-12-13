@@ -70,10 +70,10 @@ function ToDo(){
         <form className="form-todo" style={{
                     display: "flex",
                     flexDirection: "column",
-                    marginTop: "20px",
-                   
-                }}     onSubmit={handleSubmit}   
-    >
+                    marginTop: "20px",   
+                }}   
+                  onSubmit={handleSubmit}   
+                    >
          <label>Title</label>
          <input
             type="text"

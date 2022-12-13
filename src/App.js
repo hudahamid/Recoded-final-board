@@ -23,7 +23,8 @@ function App() {
             {/* <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route>  */}
 
 
-            <Route path="/about" element={<About />}></Route>    */}
+            <Route path="/about" element={<About />}></Route>    
+          
 
 
               <Route path="/Home" element={<Home />}></Route>  
