@@ -128,7 +128,7 @@ function Doing(){
                       
                            <span>{task.title}</span>
                                 <Link to={`/task/${task.id}`} key={task.id}>
-                                      <Button variant="primary">Edit</Button>  
+                                      <Button className='edit' variant="primary">Edit</Button>  
                                 </Link>
                   
                       </Card.Body>

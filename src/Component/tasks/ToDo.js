@@ -63,10 +63,13 @@ function ToDo(){
    
     return (
       <Container>
-        <Row className='card1'>
-        <Col>
+        <div className='card1'>
+       
         <h1>ToDo</h1>
-        <div className='CONTAINER'></div>
+
+        <div className='CNTAINER'></div>
+
+
         <form className="form-todo" style={{
                     display: "flex",
                     flexDirection: "column",
@@ -113,12 +116,17 @@ function ToDo(){
      
             <button type="submit" className="submit-btn"  text={"Add new task"} >Add Task</button>
         </div>
-        {/* js action */}
 
-
-
-       
+   
     </form>
+
+
+
+
+
+
+
+
     {taskList.map((task) => {
           return (
                  
@@ -145,11 +153,16 @@ function ToDo(){
                   
                       </Card.Body>
                   
+
+                  
                   
                   );
         })}
-        </Col>
-      </Row>
+
+
+        
+    
+      </div>
 
 
 
