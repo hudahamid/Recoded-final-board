@@ -66,6 +66,7 @@ function ToDo(){
         <div className='card1'>
        
         <h1>ToDo</h1>
+        <div className='CNTAINER'></div>
 
         <form className="form-todo" style={{
                     display: "flex",
@@ -113,11 +114,15 @@ function ToDo(){
      
             <button type="submit" className="submit-btn"  text={"Add new task"} >Add Task</button>
         </div>
-
-
-
-       
+   
     </form>
+
+
+
+
+
+
+
     {taskList.map((task) => {
           return (
                  
@@ -133,9 +138,14 @@ function ToDo(){
                   
                       </Card.Body>
                   
+
+                  
                   
                   );
         })}
+
+
+        
     
       </div>
 
