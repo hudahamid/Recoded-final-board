@@ -9,6 +9,7 @@ import Navbar from "./Component/Navbar"
 import {Routes, Route} from "react-router-dom";
 import About from "./Component/About";
 import TaskCard from "./Component/tasks/TasksCard"
+import BoardForm from './Component/tasks/BoardForm';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
             <Route path="/" element={<ToDo />}></Route>    
             <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route> 
             {/* <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route>  */}
+            <Route path="/" element={<BoardForm />}></Route> 
+            <Route path="/Component/tasks/BoardForm" element={<BoardForm />}></Route> 
 
 
             <Route path="/about" element={<About />}></Route>    

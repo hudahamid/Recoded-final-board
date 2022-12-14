@@ -131,6 +131,23 @@
     border: none;
     border-radius: 3px;
  }
+
+ .board-btn
+ {
+    margin-top: 7%;
+    width: 34%;
+    height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+     color:#ede3d7;
+     background-color: #334938;
+    font-size: 15px;
+   
+    border: none;
+    border-radius: 3px;
+ }
+
+
  .edit{
     color:#ede3d7;
     color: #334938;
