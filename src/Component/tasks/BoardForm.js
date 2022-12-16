@@ -78,16 +78,20 @@ export default function BoardForm(){
 
 
     return (
+        <div className='board-container'>
         <div className='BoardForm'>
            
-        <form className="form-todo" style={{
+        <form className="form-todoo" style={{
+
                     display: "flex",
+                    alignItems:"center",
                     flexDirection: "column",
                     marginTop: "20px",   
                 }}   
                   onSubmit={handleSubmit}   
                     >
-         <label>Board name  : </label>
+                      
+         <label>Board name </label>
          <input
             type="text"
             placeholder="Board Name"
@@ -96,13 +100,14 @@ export default function BoardForm(){
             onChange={handleOnChange}
           />
           
-    
-          <button type="submit" className="submit-btn"  text={"Add new Board"}>
+           
+          <button type="submit" className="submit-btnn"  text={"Add new Board"}>
             Add New board
         </button>
    
     </form>
              
+        </div>
         </div>
         
     );
