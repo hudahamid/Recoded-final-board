@@ -12,6 +12,7 @@ import TasksCard from "./TasksCard";
 import { Route, useNavigate } from "react-router-dom";
 import ToDo from './ToDo';
 
+
 export default function BoardForm(){
 
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ export default function BoardForm(){
       const [boardList, setBoardList] = useState([]);
     
       useEffect(() => {
-        onSnapshot(collection(db, "Board2"), (snapshot) => {
+        onSnapshot(collection(db, "Board"), (snapshot) => {
           snapshot.docChanges().forEach((docChange) => {
             if (docChange.type === "added") {
               setBoardList((prevBoardList) => [
@@ -54,7 +55,7 @@ export default function BoardForm(){
       // we will create a post request to add items to our database
       console.log('newBoardInput', newBoardInput);
 
-      await addDoc(collection(db, "Board2"), {
+      await addDoc(collection(db, "Board"), {
         ...newBoardInput,
       });
     
@@ -70,9 +71,8 @@ export default function BoardForm(){
       });
 
       // TODO: 
-      // navigate('./ToDo');
-      navigate('/Component/tasks/ToDo')
-      // <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route>
+       navigate('/Component/tasks/ToDo')
+      
 
     };
   
@@ -81,20 +81,16 @@ export default function BoardForm(){
 
 
     return (
-        <div className='board-container'>
         <div className='BoardForm'>
            
-        <form className="form-todoo" style={{
-
+        <form className="form-todo" style={{
                     display: "flex",
-                    alignItems:"center",
                     flexDirection: "column",
                     marginTop: "20px",   
                 }}   
                   onSubmit={handleSubmit}   
                     >
-                      
-         <label>Board name </label>
+         <label>Board name  : </label>
          <input
             type="text"
             placeholder="Board Name"
@@ -103,15 +99,32 @@ export default function BoardForm(){
             onChange={handleOnChange}
           />
           
-           
-          <button type="submit" className="submit-btnn"  text={"Add new Board"}>
+    
+          <button type="submit" className="submit-btn"  text={"Add new Board"}>
             Add New board
         </button>
    
     </form>
-             
-        </div>
-        </div>
+    <div>{boardList.map((board) => {
+                return (
+                       <Card.Body className='card-todoo'>
+
+                            <span>{board.Name}</span>
+                            <Link to={`/board/${board.id}`} key={board.id}>
+                             </Link>
+
+                  </Card.Body>
+
+
+
+
+                );
+              })}</div>
+
+      
+     </div>
+
+       
         
     );
 }
