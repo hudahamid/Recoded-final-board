@@ -8,16 +8,12 @@ export default function Home(){
     
     const handleClick = () => {
         return (
-            <div>
-    
-    
-            </div>
+
+            <div>  </div>
+
         );
         
       };
-
-
-
 
     return (
         <div className='homee'>
@@ -25,6 +21,7 @@ export default function Home(){
             
            <Link to="/Component/tasks/BoardForm"  className='link-home'>   <div className='card-home'>
                        
+
                        <h2>New kanban board</h2>
                      
                      
@@ -32,11 +29,10 @@ export default function Home(){
                    
                   </div></Link>
            
+
                
              
         </div>
         
     );
 }
-
-{/* <Link to="./tasks/boardForm"  ><BoardForm/></Link> */}// 
