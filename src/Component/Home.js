@@ -22,7 +22,7 @@ export default function Home(){
            <Link to="/Component/tasks/BoardForm"  className='link-home'>   <div className='card-home'>
                        
 
-                       <h2>New kanban board</h2>
+                       <h2> Kanban Board</h2>
                      
                      
  

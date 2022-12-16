@@ -105,10 +105,10 @@ function ToDo(){
                   name="assign"
                   value={newTaskInput.assign}
                   onChange={handleOnChange} />
-                <label>Started</label>
+                <label>Completed</label>
                 <input
                   type="text"
-                  placeholder="start"
+                  placeholder="true"
                   name="start"
                   value={newTaskInput.start}
                   onChange={handleOnChange} />
