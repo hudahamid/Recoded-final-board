@@ -220,3 +220,50 @@ border-radius: 2px
 .link-home:hover{
     color: #ede3d7;
 }
+
+.BoardForm{
+   
+    background: linear-gradient(to bottom right, #e1be25,#f7783d,#418b53 );
+    padding: 1%;
+    height: 25%;
+    width: 25%;
+   
+}
+.board-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.submit-btnn{
+    margin: 3%;
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     color:#ede3d7;
+     background-color: #334938;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+
+}
+.form-todoo label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    text-align: start !important;
+    font-size: 23px;
+    margin-bottom: 4%;
+    font-weight: bold;
+}
+.form-todoo input{
+    height: 4vh;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1%;
+    background-color:#ede3d7;
+    
+ }
