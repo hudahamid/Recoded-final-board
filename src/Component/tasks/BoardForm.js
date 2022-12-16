@@ -8,9 +8,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import db from "../../firebase";
 import { collection, addDoc, onSnapshot,doc } from "firebase/firestore"
+
 import TasksCard from "./TasksCard";
 import { Route, useNavigate } from "react-router-dom";
 import ToDo from './ToDo';
+
 
 
 export default function BoardForm(){
@@ -21,6 +23,7 @@ export default function BoardForm(){
       const [boardList, setBoardList] = useState([]);
     
       useEffect(() => {
+        
         onSnapshot(collection(db, "Board"), (snapshot) => {
           snapshot.docChanges().forEach((docChange) => {
             if (docChange.type === "added") {
@@ -32,6 +35,7 @@ export default function BoardForm(){
               setBoardList(
                   boardList.filter((board) => board.id !== docChange.doc.id)
               );
+           
             }
           });
         });
