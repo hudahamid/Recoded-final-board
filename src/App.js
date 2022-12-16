@@ -17,22 +17,23 @@ function App() {
         <div className="container1"  id='basic_view'>
           <Routes>
 
-            <Route path="/Home" element={<Home />}></Route>  
+            <Route path="/Home" element={<Home />}></Route> 
+
             <Route path="/" element={<ToDo />}></Route>    
             <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route> 
+
             {/* <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route>  */}
             <Route path="/" element={<BoardForm />}></Route> 
             <Route path="/Component/tasks/BoardForm" element={<BoardForm />}></Route> 
-
-
+            
             <Route path="/about" element={<About />}></Route>    
 
 
 
 
-              <Route path="/Home" element={<Home />}></Route>  
-           <Route path="/" element={<ToDo />}></Route>   
-            <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route> 
+              {/* <Route path="/Home" element={<Home />}></Route>   */}
+           {/* <Route path="/" element={<ToDo />}></Route>    */}
+            {/* <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route>  */}
             {/* <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route>  */}
 
           </Routes>
