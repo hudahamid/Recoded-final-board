@@ -9,6 +9,7 @@ import db from "../../firebase";
 import { collection, addDoc, onSnapshot } from "firebase/firestore"
 import TasksCard from "./TasksCard";
 import Doing from './Doing';
+import Card1 from './card-completed';
 
 function ToDo(){
     //const [Title, setTitle] = useState("")
@@ -165,7 +166,13 @@ function ToDo(){
 
 
 
-      </Container><Doing /></>
+      </Container><Doing />
+      
+      <Card1/>
+      </>
+      
+    
+
     
     
     
