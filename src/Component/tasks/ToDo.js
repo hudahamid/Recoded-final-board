@@ -9,7 +9,7 @@ import db from "../../firebase";
 import { collection, addDoc, onSnapshot } from "firebase/firestore"
 import TasksCard from "./TasksCard";
 import Doing from './Doing';
-import CopmletedTasks from './CompletedTask';
+
 
 function ToDo(){
     //const [Title, setTitle] = useState("")
@@ -87,6 +87,7 @@ function ToDo(){
                   name="title"
                   value={newTaskInput.title}
                   onChange={handleOnChange} />
+                  
                 <label>Describtion</label>
                 <input
                   className="desc"
@@ -165,7 +166,7 @@ function ToDo(){
 
           </Container>
           <Doing />
-          <CopmletedTasks/>
+          
           
           </>
     

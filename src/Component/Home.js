@@ -23,6 +23,7 @@ export default function Home(){
                       {/* <Button  onClick={handleClick}>+   </Button> */}
                       {/* <Route path="/" element={<BoardForm />}></Route>  */}
                       <Link to="/Component/tasks/BoardForm" >  ADD </Link>  
+                      {/* <Link to="/Component/AddingBoard" >  ADD2 </Link>  */}
             </div>
                
              
