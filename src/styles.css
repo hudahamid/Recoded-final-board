@@ -210,3 +210,12 @@ border-radius: 2px
     border-radius: 2px
        
 }
+
+.link-home{
+    text-decoration: none;
+    color: black;
+}
+
+.link-home:hover{
+    color: #ede3d7;
+}

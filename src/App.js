@@ -9,6 +9,9 @@ import {Routes, Route} from "react-router-dom";
 import About from "./Component/About";
 import TaskCard from "./Component/tasks/TasksCard"
 import BoardForm from './Component/tasks/BoardForm';
+import Card1 from './Component/tasks/card-completed';
+import Completed from './Component/tasks/completed';
+
 
 function App() {
   return (
@@ -26,8 +29,13 @@ function App() {
             {/* <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route>  */}
             {/* <Route path="/" element={<BoardForm />}></Route>  */}
             <Route path="/Component/tasks/BoardForm" element={<BoardForm />}></Route> 
-            
+
+            <Route path="/" element={<BoardForm />}></Route> 
+            <Route path="/Component/tasks/completed" element={<Completed/>}></Route> 
+
+
             <Route path="/about" element={<About />}></Route>    
+
 
 
 
@@ -35,6 +43,7 @@ function App() {
               {/* <Route path="/Home" element={<Home />}></Route>   */}
            {/* <Route path="/" element={<ToDo />}></Route>    */}
             {/* <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route>  */}
+
             {/* <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route>  */}
 
           </Routes>

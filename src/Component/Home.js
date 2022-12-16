@@ -8,7 +8,9 @@ export default function Home(){
     
     const handleClick = () => {
         return (
+
             <div>  </div>
+
         );
         
       };
@@ -17,14 +19,17 @@ export default function Home(){
         <div className='homee'>
            <h2 className='urwork' > YOUR WORKSPACES</h2>
             
-            <div className='card-home'>
+           <Link to="/Component/tasks/BoardForm"  className='link-home'>   <div className='card-home'>
                        
-                      <h2>New kanban board</h2>
-                      {/* <Button  onClick={handleClick}>+   </Button> */}
-                      {/* <Route path="/" element={<BoardForm />}></Route>  */}
-                      <Link to="/Component/tasks/BoardForm" >  ADD </Link>  
-                      {/* <Link to="/Component/AddingBoard" >  ADD2 </Link>  */}
-            </div>
+
+                       <h2>New kanban board</h2>
+                     
+                     
+ 
+                   
+                  </div></Link>
+           
+
                
              
         </div>
