@@ -80,9 +80,11 @@ export default function BoardForm(){
 
 
     return (
+      <div className='board-container'>
+      
         <div className='BoardForm'>
            
-        <form className="form-todo" style={{
+        <form className="form-todoo" style={{
                     display: "flex",
                     flexDirection: "column",
                     marginTop: "20px",   
@@ -99,26 +101,23 @@ export default function BoardForm(){
           />
           
     
-          <button type="submit" className="submit-btn"  text={"Add new Board"}>
+          <button type="submit" className="submit-btnn"  text={"Add new Board"}>
             Add New board
         </button>
    
     </form>
-     <div>{boardList.map((board) => {
+    </div>
+    <div className='cardss'>
+
+    
+     {boardList.map((board) => {
                 return (
-                       <Card.Body className='card-todoo'>
+                       <Card.Body className='card-boards'>
 
                             <span>{board.Name}</span>
                             <Link to={`/board/${board.id}`} key={board.id}>
                              </Link>
 
-                    {/* { document.querySelectorAll('.edit').addEventListener('click', event => {
-                  const CONTAINER = document.querySelector(".CONTAINER");
-                    CONTAINER.innerHTML = `
-                    <h1>hello</h1>
-                    `;
-                  })
-                    } */}
 
 
                   </Card.Body>
@@ -127,7 +126,8 @@ export default function BoardForm(){
 
 
                 );
-              })}</div>
+              })}
+              </div>
      
     
       
