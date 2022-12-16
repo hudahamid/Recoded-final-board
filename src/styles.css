@@ -227,12 +227,16 @@ border-radius: 2px
     padding: 1%;
     height: 25%;
     width: 25%;
+    margin: 5%;
+   justify-content: center;
+   align-items: center;
+    
    
 }
 .board-container{
     display: flex;
-    justify-content: center;
-    margin-top: 5%;
+    flex-direction: column;
+   
     height: 100vh;
     width: 100vw;
 }
@@ -265,5 +269,26 @@ border-radius: 2px
     border-radius: 3px;
     margin-bottom: 1%;
     background-color:#ede3d7;
+    
+ }
+ .card-boards{
+    background: linear-gradient(to bottom right, #e1be25,#f7783d,#418b53 );
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 23px;
+   font-weight: bold;
+   color: black;
+    height: 20%;
+    margin: 2%;
+    width: 20%;
+   
+ }
+ .cardss{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
     
  }
