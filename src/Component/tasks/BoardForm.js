@@ -21,7 +21,7 @@ export default function BoardForm(){
       const [boardList, setBoardList] = useState([]);
     
       useEffect(() => {
-        onSnapshot(collection(db, "ToDo"), (snapshot) => {
+        onSnapshot(collection(db, "Board2"), (snapshot) => {
           snapshot.docChanges().forEach((docChange) => {
             if (docChange.type === "added") {
               setBoardList((prevBoardList) => [
@@ -53,7 +53,7 @@ export default function BoardForm(){
       event.preventDefault();
       // instead of saving new items to our state
       // we will create a post request to add items to our database
-      await addDoc(collection(db, "Board"), {
+      await addDoc(collection(db, "Board2"), {
         ...newBoardInput,
       });
       // Clear the form
@@ -77,7 +77,7 @@ export default function BoardForm(){
                 }}   
                   onSubmit={handleSubmit}   
                     >
-         <label>Board name</label>
+         <label>Board name  : </label>
          <input
             type="text"
             placeholder="Board Name"
@@ -87,8 +87,11 @@ export default function BoardForm(){
           />
           
         <div>
-        <Link to="/Component/tasks/ToDo" >     <button type="submit" className="submit-btn"  text={"Add new Board"}  Link="/Component/tasks/ToDo">Add New board
-        </button></Link>
+        <Link to="/Component/tasks/ToDo" > 
+          <button type="submit" className="submit-btn"  text={"Add new Board"}  Link="/Component/tasks/ToDo">
+            Add New board
+        </button>
+        </Link>
          
         </div>
 
