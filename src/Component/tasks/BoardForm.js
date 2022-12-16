@@ -69,7 +69,7 @@ export default function BoardForm(){
       });
 
       // TODO: 
-      navigate('/todos');
+      navigate('/ToDo');
 
     };
   

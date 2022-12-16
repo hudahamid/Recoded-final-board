@@ -167,6 +167,7 @@ function ToDo(){
 
           </Container>
           <Doing />
+          <Card1/>
           
           
           </>
