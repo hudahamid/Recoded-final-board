@@ -9,7 +9,8 @@ import { Link } from "react-router-dom";
 import db from "../../firebase";
 import { collection, addDoc, onSnapshot,doc } from "firebase/firestore"
 import TasksCard from "./TasksCard";
-import { useNavigate } from "react-router-dom";
+import { Route, useNavigate } from "react-router-dom";
+import ToDo from './ToDo';
 
 export default function BoardForm(){
 
@@ -58,9 +59,9 @@ export default function BoardForm(){
       });
     
 
-      await doc(collection(db, "Board2","tasks"), {
-        ...newBoardInput,
-      });
+      // await doc(collection(db, "Board2","tasks"), {
+      //   ...newBoardInput,
+      // });
       // Clear the form
       setNewBoardInput({
         Name: "",
@@ -69,7 +70,9 @@ export default function BoardForm(){
       });
 
       // TODO: 
-      navigate('/ToDo');
+      // navigate('./ToDo');
+      navigate('/Component/tasks/ToDo')
+      // <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route>
 
     };
   
