@@ -8,35 +8,10 @@ export default function Home(){
     
     const handleClick = () => {
         return (
-            <div>
-              {/* <Routes>
-                
-                       
-                        <Route path="/Component/tasks/BoardForm" element={<BoardForm />}></Route>    
-                        <Route path="/Component/tasks/BoardForm" element={<BoardForm />}></Route> 
-                    
-
-
-</Routes> */}
-
-
-{/*                 
-                <Link to="/" className="site-title">Empy Task</Link>
-    
-                <ul>
-                   
-                    <Link to="/Component/tasks/BoardForm" elements={<BoardForm/>}>BoardForm  +</Link>
-    
-                    
-                </ul> */}
-    
-            </div>
+            <div>  </div>
         );
         
       };
-
-
-
 
     return (
         <div className='homee'>
@@ -47,15 +22,11 @@ export default function Home(){
                       <h2>New kanban board</h2>
                       {/* <Button  onClick={handleClick}>+   </Button> */}
                       {/* <Route path="/" element={<BoardForm />}></Route>  */}
-                      <Link to="/Component/tasks/BoardForm" >  ADD </Link>
-
-                  
-                 </div>
+                      <Link to="/Component/tasks/BoardForm" >  ADD </Link>  
+            </div>
                
              
         </div>
         
     );
 }
-
-{/* <Link to="./tasks/boardForm"  ><BoardForm/></Link> */}// 
