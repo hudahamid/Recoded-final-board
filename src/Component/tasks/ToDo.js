@@ -19,7 +19,7 @@ function ToDo(){
     const [taskList, setTaskList] = useState([]);
   
     useEffect(() => {
-      onSnapshot(collection(db, "ToDo"), (snapshot) => {
+      const unsubscribe =onSnapshot(collection(db, "ToDo"), (snapshot) => {
         snapshot.docChanges().forEach((docChange) => {
           if (docChange.type === "added") {
             setTaskList((prevTaskList) => [
@@ -32,7 +32,7 @@ function ToDo(){
             );
           }
         });
-      });
+      }); return unsubscribe
     }, []);
 
 

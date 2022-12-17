@@ -20,7 +20,7 @@ export default function BoardForm(){
       const [boardList, setBoardList] = useState([]);
     
       useEffect(() => {
-        onSnapshot(collection(db, "Board"), (snapshot) => {
+        const unsubscribe =onSnapshot(collection(db, "Board"), (snapshot) => {
           snapshot.docChanges().forEach((docChange) => {
             if (docChange.type === "added") {
               setBoardList((prevBoardList) => [
@@ -33,7 +33,7 @@ export default function BoardForm(){
               );
             }
           });
-        });
+        }); return unsubscribe 
       }, []);
   
   
