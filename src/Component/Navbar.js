@@ -9,7 +9,7 @@ export default function Navbar(){
 
             <ul>
                 <CustomLink to="/home">Home</CustomLink> 
-                <CustomLink to="/Component/tasks/ToDo">ToDo</CustomLink>
+                {/* <CustomLink to="/Component/tasks/ToDo">ToDo</CustomLink> */}
 
                 <CustomLink to="/about">About</CustomLink>
             </ul>

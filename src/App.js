@@ -40,11 +40,7 @@ function App() {
 
 
 
-              {/* <Route path="/Home" element={<Home />}></Route>   */}
-           {/* <Route path="/" element={<ToDo />}></Route>    */}
-            {/* <Route path="/Component/tasks/ToDo" element={<ToDo />}></Route>  */}
-
-            {/* <Route path="/Component/tasks/TasksCard" element={<TaskCard/>}></Route>  */}
+           
 
           </Routes>
        

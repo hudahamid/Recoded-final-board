@@ -81,7 +81,7 @@ export default function BoardForm(){
 
     return (
       <div className='board-container'>
-      
+         <h3 className='urwork1'  > ADD NEW BOARD</h3>
         <div className='BoardForm'>
            
         <form className="form-todoo" style={{
@@ -107,20 +107,29 @@ export default function BoardForm(){
    
     </form>
     </div>
+    <h2 className='urwork'  > YOUR Recent Work</h2>
     <div className='cardss'>
-
+    
     
      {boardList.map((board) => {
                 return (
-                       <Card.Body className='card-boards'>
+          
 
-                            <span>{board.Name}</span>
-                            <Link to={`/board/${board.id}`} key={board.id}>
-                             </Link>
+                        
 
+                       <card>
+                         
+                        
+                    
 
+                             <Link to="/Component/tasks/ToDo" key={board.id}  className='link-home'>   <div className='card-boards'>
+                       
 
-                  </Card.Body>
+                             <span>{board.Name}</span>
+                     
+                  </div></Link>
+
+                  </card>
 
 
 
