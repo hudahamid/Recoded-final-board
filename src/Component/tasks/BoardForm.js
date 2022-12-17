@@ -107,7 +107,7 @@ export default function BoardForm(){
    
     </form>
     </div>
-    <h2 className='urwork'  > YOUR Recent Work</h2>
+    <h2 className='urwork'  > YOUR RECENT WORK</h2>
     <div className='cardss'>
     
     
